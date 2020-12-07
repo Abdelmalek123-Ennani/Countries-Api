@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>country APIs</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+     
+    <div class="container one py-3 shadow-sm">
+         <div class="row">
+             <div class="col-6 pl-5 font-weight-bold">Where in the world</div>
+             <div class="col-6 text-right pr-5"><button type="button" class="btn dark-mode"><i class="far fa-moon"></i><span> Dark mode</span></button></div>
+         </div>
+    </div>
+    <div class="container countries py-4 ">
+        <div class="search-filter-blok">
+            <div class="row">
+                <div class="col-12 col-sm-6 mb-3 ">
+                    <div class="search">
+                        <input type="text" class="input" placeholder="search for country">
+                        <i class="fas fa-search"></i> 
+                    </div>
+                    
+                 </div>
+                <div class="col-12 text-left col-sm-6 text-sm-right">
+                   <div class="select">
+                    <select>
+                        
+                        <option value="Africa">africa</option>
+                        <option value="Europe">europe</option>
+                        <option value="All">ALL</option>
+                        <option value="Asia">asia</option>
+                        <option value="Oceania">oceania</option>
+                        <option value="Americas">america</option>
+                    </select>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div class="resaults py-3 d-flex justify-content-around "></div>
+    </div>
+
+     <script src="./js/jquery-3.5.1.min.js"></script>
+     <script src="./js/popper.js"></script>
+     <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

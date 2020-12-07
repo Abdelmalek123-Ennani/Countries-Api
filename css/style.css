@@ -1,0 +1,143 @@
+
+
+:root {
+    --text-color : #333;
+    --bg-countries :#f8f9fa ; 
+    --one-color : #FFF;
+}
+
+.one {
+    background-color: var(--one-color);
+    color: var(--text-color);
+    transition: .4s all ease;
+}
+
+
+.container .dark-mode {
+    font-size: 19px;
+    color: var(--text-color);
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+.search {
+    background-color: #FFF;
+    width: 251px;
+    height: 32px;
+    padding-left: 16px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 7px #EEE;
+}
+
+.search input {
+    width: 80%;
+    border: none;
+    outline: none;
+    height: 100%;
+    font-size: 14px;
+    color: #6c6262;
+}
+
+.search .fas {
+    color: #7c6565;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.search .fas:hover {
+    color: lightcoral;
+    transition: .4s;
+}
+
+select {
+    -webkit-appearance: none;   /*to remove signe of drap down in select*/
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+
+select {
+    padding: 6px 10px;
+    border: solid 2px #EEE;
+    cursor: pointer;
+    border: none;
+}
+
+.select::after {
+    content: '\25BC';
+    font-family: 'Font Awesome\ 5 Free';
+    background: #FFF;
+    height: 1rel;
+    padding: 10px 7px;
+    margin-left: -5px;
+}
+
+@media (max-width : 768px){
+    .search {
+        width: 100%;
+        height: 42px;
+        margin-bottom: 30Px;
+    }
+
+    select {
+        width: 159Px;
+        padding-left: 38px;
+        font-size: 16px;
+        box-shadow: 0px 5px 4px #EEE;
+    }
+
+    .select::after {
+        box-shadow: 0px 5px 4px #EEE;
+    }
+}
+
+.countries {
+    background-color: var(--bg-countries);
+    transition: all .4s ease;
+}
+
+.country {
+    width: 294Px;
+    position: relative;
+    height: 260px;
+    margin-bottom: 15px;
+    background-color: #EEE;
+    margin-bottom: 25px;
+    box-shadow: 0px 5px 8px #EEE;
+}
+
+.flag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 140px;
+}
+
+.flag img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.country .desc {
+    position: absolute;
+    bottom: 0;
+    height: 120px;
+    text-align: center;
+    width: 100%;
+}
+
+.country .desc h4 {
+    margin-bottom: 18px;
+}
+
+.country .desc p {
+    line-height: 5px;
+}
+
+.resaults {
+    flex-wrap: wrap;
+}
